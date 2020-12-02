@@ -1,8 +1,8 @@
 .sidebarChat {
     display: flex;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
-    border: 1px solid #f6f6f6;
+    border-left: 1px solid lightgrey;
     font-size: 14px;
 }
 
@@ -12,7 +12,7 @@ a{
 }
 
 .sidebarChat:hover {
-    background-color: #ebebee;
+    background-color: #a6afbe;
 }
 .sidebarChat_info > h2{
     font-size: 17px;

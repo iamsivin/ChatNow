@@ -30,7 +30,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar_header">
-        <Avatar src={user?.photoURL}/>
+        <Avatar src={user?.photoURL}/><h3 className="logo_name">Chat Now</h3>
         <div className="sidebar_headerRight">
           <IconButton>
             <MoreVertIcon />
