@@ -2,7 +2,6 @@ import { Avatar, IconButton } from "@material-ui/core";
 // import { ImportExportTwoTone } from '@material-ui/icons';
 import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
-import ChatIcon from "@material-ui/icons/Chat";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { SearchOutlined } from "@material-ui/icons";
 import SidebarChat from "./SidebarChat";
@@ -11,7 +10,7 @@ import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
-  const [{ user }, dispatch ] = useStateValue();
+  const [{ user } ] = useStateValue();
 
   useEffect(() => {
     const unsubscribe = db.collection("rooms").onSnapshot((snapshot) =>
@@ -33,9 +32,6 @@ function Sidebar() {
       <div className="sidebar_header">
         <Avatar src={user?.photoURL}/>
         <div className="sidebar_headerRight">
-          <IconButton>
-            <ChatIcon />
-          </IconButton>
           <IconButton>
             <MoreVertIcon />
           </IconButton>

@@ -87,8 +87,9 @@
 
 .chat_footer>form>input {
     flex: 1;
-    border-radius: 30px;
+    border-radius: 12px;
     padding: 10px;
+    font-size: 13px;
     border: none;
     outline: none;
 }

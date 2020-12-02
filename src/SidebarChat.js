@@ -1,7 +1,8 @@
-import { Avatar } from '@material-ui/core';
+import { Avatar, IconButton } from '@material-ui/core';
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import db from './firebase';
+import ChatIcon from "@material-ui/icons/Chat";
 import "./SidebarChat.css";
 
 function SidebarChat({id, name, addNewChat}) {
@@ -46,8 +47,11 @@ db.collection('rooms').add({
         </Link>
     ):
     (
-        <div onClick={createChat} className="sidebarChat">
-            <h2>ChatNow</h2>
+        <div onClick={createChat} className="sidebarChats">
+            <h2 className="chat_add">        
+              <IconButton>
+            <ChatIcon />
+          </IconButton></h2>
         </div>
     )
 }
