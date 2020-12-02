@@ -3,14 +3,13 @@
     flex-direction: column;
     flex: 0.36;
     background-color: #EDF2F4;
-    border-bottom: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
 }
 
 .sidebar_header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid lightgrey;
 }
 
 .sidebar_headerRight {
